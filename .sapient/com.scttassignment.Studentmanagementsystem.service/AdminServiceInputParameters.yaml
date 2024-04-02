@@ -1,0 +1,711 @@
+---
+modelFingerprint: "5E1794FE3B59BD73A25D9D8B4D545E95"
+methods:
+- method:
+    name: "registerAdmin"
+    returnType: "boolean"
+    signature: "registerAdmin(com.scttassignment.Studentmanagementsystem.dto.AdminDTO)\
+      \ : boolean"
+    instructionFingerprint: "F2F70595C85A16B917DFF64CEC9AD0C5"
+    parametersTypes:
+    - "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerAdminWhenExistingAdminIsPresent"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F0D700693542F59BF7C6B702058B1287"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminRepo:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+              uuid: "adminRepo1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminRepo:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+              uuid: "adminRepo1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "adminDTO"
+      modelFingerprint: "FD6AF43D0203753C579EB0D078B3753B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "email1"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "registerAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "adminDTO"
+      modelFingerprint: "82B43B66E614B5F1685B0B89C2BB88B0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "email1"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "registerAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "adminDTO"
+        name: "getEmail"
+        parameters: []
+        signature: "getEmail(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "email1"
+          valueType: "java.lang.String"
+          uuid: "registerAdmin_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "adminRepo"
+      modelFingerprint: "4AFD21B9643A598D72B8DA6140FB5280"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+        uuid: "adminRepo1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.adminRepo"
+        name: "findByEmail"
+        parameters:
+        - name: "kduemail"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "email1"
+            valueType: "java.lang.String"
+            uuid: "registerAdmin_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findByEmail(String): Optional"
+        returnValue:
+          sapientType: "OPTIONAL"
+          content: !<optional>
+            value:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.entity.admin"
+              uuid: "registerAdmin_optional1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            target: "java.util.Optional"
+          valueType: "java.util.Optional"
+          genericValueType: "com.scttassignment.Studentmanagementsystem.entity.admin"
+          uuid: "registerAdmin_optional1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD_WITH_AUTOWIRED"
+      name: "modelMapper"
+      modelFingerprint: "7DCE932173E06F0F99AE36BA04DBF670"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.modelmapper.ModelMapper"
+        uuid: "modelMapper1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f2f9d975-3344-3592-8df1-e3423138bee3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    lastExecutionStatus: "PASSED"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "registerAdminWhenExistingAdminNotIsPresent"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F8301B43915A4919312BAFB0B3167FD1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            modelMapper:
+              sapientType: "MOCK"
+              valueType: "org.modelmapper.ModelMapper"
+              uuid: "modelMapper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            adminRepo:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+              uuid: "adminRepo1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            modelMapper:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.modelmapper.ModelMapper"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.modelmapper.ModelMapper"
+              uuid: "modelMapper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            adminRepo:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+              uuid: "adminRepo1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "adminDTO"
+      modelFingerprint: "FD6AF43D0203753C579EB0D078B3753B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "email1"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "registerAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "adminDTO"
+      modelFingerprint: "82B43B66E614B5F1685B0B89C2BB88B0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "email1"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            email:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "registerAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "registerAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "adminDTO"
+        name: "getEmail"
+        parameters: []
+        signature: "getEmail(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "email1"
+          valueType: "java.lang.String"
+          uuid: "registerAdmin_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "adminRepo"
+      modelFingerprint: "6A9942725A94E08D0BDA5B2CEB38B6AA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+        uuid: "adminRepo1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.adminRepo"
+        name: "findByEmail"
+        parameters:
+        - name: "kduemail"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "email1"
+            valueType: "java.lang.String"
+            uuid: "registerAdmin_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findByEmail(String): Optional"
+        returnValue:
+          sapientType: "OPTIONAL"
+          content: !<optional>
+            value:
+              sapientType: "NULL"
+              valueType: "com.scttassignment.Studentmanagementsystem.entity.admin"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            target: "java.util.Optional"
+          valueType: "java.util.Optional"
+          genericValueType: "com.scttassignment.Studentmanagementsystem.entity.admin"
+          uuid: "registerAdmin_optional1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "modelMapper"
+      modelFingerprint: "117C34F4CE1233FABC3E06637D24D41F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.modelmapper.ModelMapper"
+        uuid: "modelMapper1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.modelMapper"
+        name: "map"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+              propertiesMap:
+                email:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "email1"
+                  valueType: "java.lang.String"
+                  uuid: "registerAdmin_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<new>
+              target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+              propertiesMap:
+                email:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "registerAdmin_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+            uuid: "registerAdmin_adminDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "destinationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.scttassignment.Studentmanagementsystem.entity.admin"
+            valueType: "java.lang.Class"
+            genericValueType: "com.scttassignment.Studentmanagementsystem.entity.admin"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "map(AdminDTO,Class): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.scttassignment.Studentmanagementsystem.entity.admin"
+          uuid: "registerAdmin_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "adminRepo"
+      modelFingerprint: "6CF7B7D2D12A05A757640FAC982B9A12"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.repository.AdminRepo"
+        uuid: "adminRepo1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.adminRepo"
+        name: "save"
+        parameters:
+        - name: "entity"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.entity.admin"
+            uuid: "registerAdmin_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "save(admin): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "registerAdmin_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3e8bfd5c-7fd0-33a9-a878-4cf4a270ba9b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    lastExecutionStatus: "FAILED"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "authenticateAdmin"
+    returnType: "boolean"
+    signature: "authenticateAdmin(java.lang.String,java.lang.String) : boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Exception"
+    instructionFingerprint: "821BDA54FEF055CCBE386D13CF0BC50B"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "authenticateAdminWhenAdminOptionalIsPresent"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7CF8C4CEFBFDCADB9A14165F36783B38"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "98f90f4a-a5d4-3b17-af9d-d1508e7f2de7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "authenticateAdminWhenAdminOptionalNotIsPresent"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1827F1F87458F5D13B27B0394EB8F97E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "5e5e783c-ffb9-3371-8885-e77a05b2cd6d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "authenticateAdminWhenCaughtException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E93EDBE3BA1307FF07E574A956295526"
+    problemWasSolvedByProver: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Exception"
+    truncated: true
+    inputParameters: []
+    uuid: "8f86c5a4-f8e1-3ea7-bada-a67da36420c7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

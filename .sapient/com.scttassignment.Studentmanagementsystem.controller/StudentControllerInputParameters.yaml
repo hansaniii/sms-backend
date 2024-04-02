@@ -1,0 +1,1091 @@
+---
+modelFingerprint: "3042BD495B970F3AA9548A48295A0945"
+methods:
+- method:
+    name: "getStudent"
+    returnType: "java.util.List"
+    signature: "getStudent() : java.util.List<com.scttassignment.Studentmanagementsystem.dto.StudentDTO>"
+    instructionFingerprint: "6AF949903276216CCE7E745467AA4955"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getStudentTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AE618604FD540CDEE4167B8EA73EFE95"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "17B3EDF6AF77233E8335A3115A43E874"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+        uuid: "studentService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.studentService"
+        name: "getAllStudents"
+        parameters: []
+        signature: "getAllStudents(): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+          uuid: "getStudent_list1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5A3B3133305D63622EC37E4D9D9304B5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+        uuid: "getStudent_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b16cf963-bd08-3c59-96d4-1049f90b3668"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "saveStudent"
+    returnType: "org.springframework.http.ResponseEntity"
+    signature: "saveStudent(com.scttassignment.Studentmanagementsystem.dto.StudentDTO)\
+      \ : org.springframework.http.ResponseEntity<java.lang.String>"
+    instructionFingerprint: "426277A70DFD12C6BCE7109CB2ED6CD5"
+    parametersTypes:
+    - "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "saveStudentWhenStudentServiceRegisterStudentStudentDTO"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A8681E2984593859759A16386FF2A455"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "studentDTO"
+      modelFingerprint: "9615DEA11884DD7D3281DA50AD57EC56"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+        uuid: "saveStudent_studentDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "97E51176F2D319292B10308BD10BF3FE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+        uuid: "studentService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.studentService"
+        name: "registerStudent"
+        parameters:
+        - name: "studentDTO"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+            uuid: "saveStudent_studentDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerStudent(StudentDTO): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "saveStudent_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ResponseEntity"
+      modelFingerprint: "60654E4E5F84D70492CC2EF0B1BBD45F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.http.ResponseEntity"
+        uuid: "org.springframework.http.ResponseEntity"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity"
+        name: "ok"
+        parameters:
+        - name: "body"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Registration successful"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "ok(String): ResponseEntity"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "ok"
+            methodParameters:
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Registration successful"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "ok"
+            methodParameters:
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Registration successful"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.http.ResponseEntity"
+          genericValueType: "java.lang.String"
+          uuid: "saveStudent_responseEntity1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "638FC0E0DF72E97AB33ABD62BC59B1C7"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "ok"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Registration successful"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "ok"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Registration successful"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.http.ResponseEntity"
+        genericValueType: "java.lang.String"
+        uuid: "saveStudent_responseEntity1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "45048d42-8595-3e6d-ab08-eb74afa5978e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "saveStudentWhenStudentServiceNotRegisterStudentStudentDTO"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F84DDE7B2C7E8065CF39011FB3CDC2EA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "studentDTO"
+      modelFingerprint: "9615DEA11884DD7D3281DA50AD57EC56"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+        uuid: "saveStudent_studentDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "B5C0E80E1125F207340147EDBA376C9C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+        uuid: "studentService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.studentService"
+        name: "registerStudent"
+        parameters:
+        - name: "studentDTO"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+            uuid: "saveStudent_studentDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerStudent(StudentDTO): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "saveStudent_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ResponseEntity"
+      modelFingerprint: "A95C71518258E19408D2226D85538185"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.http.ResponseEntity"
+        uuid: "org.springframework.http.ResponseEntity"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity"
+        name: "status"
+        parameters:
+        - name: "status"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BAD_REQUEST"
+            valueType: "org.springframework.http.HttpStatus"
+            uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "status(HttpStatus): ResponseEntity$BodyBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "status"
+            methodParameters:
+            - value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "BAD_REQUEST"
+                valueType: "org.springframework.http.HttpStatus"
+                uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "status"
+            methodParameters:
+            - value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "BAD_REQUEST"
+                valueType: "org.springframework.http.HttpStatus"
+                uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+          uuid: "saveStudent_responseEntity.BodyBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "5A11A170BFD9A5C205CBAAE97B7090AE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "status"
+          methodParameters:
+          - value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BAD_REQUEST"
+              valueType: "org.springframework.http.HttpStatus"
+              uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "status"
+          methodParameters:
+          - value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BAD_REQUEST"
+              valueType: "org.springframework.http.HttpStatus"
+              uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+        uuid: "saveStudent_responseEntity.BodyBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity$BodyBuilder"
+        name: "body"
+        parameters:
+        - name: "body"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Email already exists"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "body(String): ResponseEntity"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "BAD_REQUEST"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "BAD_REQUEST"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "saveStudent_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Email already exists"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "BAD_REQUEST"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "saveStudent_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Email already exists"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          valueType: "org.springframework.http.ResponseEntity"
+          genericValueType: "java.lang.String"
+          uuid: "saveStudent_responseEntity1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6359D3FB2D6134F8F9C0B42E2E33A5E2"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "BAD_REQUEST"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "BAD_REQUEST"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "saveStudent_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Email already exists"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        suggestedContent: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "BAD_REQUEST"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "saveStudent_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Email already exists"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        valueType: "org.springframework.http.ResponseEntity"
+        genericValueType: "java.lang.String"
+        uuid: "saveStudent_responseEntity1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4cae9bc7-628b-3b46-ba85-b8cd20471533"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "updateStudent"
+    returnType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+    signature: "updateStudent(com.scttassignment.Studentmanagementsystem.dto.StudentDTO)\
+      \ : com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+    instructionFingerprint: "878874F0FEEA59671F5DC6A9A3561ED1"
+    parametersTypes:
+    - "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "updateStudentTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "625980E26F33ED6AE8F7C18D8FA6CF1A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "studentDTO"
+      modelFingerprint: "9615DEA11884DD7D3281DA50AD57EC56"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+        uuid: "updateStudent_studentDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "5B12E60B1181D3F6D92CA727B3E4D811"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+        uuid: "studentService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.studentService"
+        name: "updateStudent"
+        parameters:
+        - name: "studentDTO"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+            uuid: "updateStudent_studentDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "updateStudent(StudentDTO): StudentDTO"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+          uuid: "updateStudent_studentDTO2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1A4BB1B7FB42B573C28B8FEB7011F848"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.StudentDTO"
+        uuid: "updateStudent_studentDTO2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e7caf34e-ce5b-31a9-94d0-abd5253c6d65"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "removeStudentByindexno"
+    returnType: "void"
+    signature: "removeStudentByindexno(java.lang.String) : void"
+    instructionFingerprint: "961BEF4678039CD85752817043FEFD09"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "removeStudentByindexnoTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6D74326A83122559487A018DF18CEEDB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            studentService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+              uuid: "studentService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.StudentController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "indexno"
+      modelFingerprint: "DF82BB20BAC89C515538FAC9D2A27479"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "indexno1"
+        valueType: "java.lang.String"
+        uuid: "removeStudentByindexno_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "studentService"
+      modelFingerprint: "6C3CBD6092CFC5AC9BAF46F42C1F2099"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.StudentService"
+        uuid: "studentService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.studentService"
+        name: "removeStudentByindexno"
+        parameters:
+        - name: "indexno"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "indexno1"
+            valueType: "java.lang.String"
+            uuid: "removeStudentByindexno_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "removeStudentByindexno(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "removeStudentByindexno_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "95afc210-99c9-307b-ba34-d62663ccfa84"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

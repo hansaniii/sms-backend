@@ -1,0 +1,222 @@
+---
+modelFingerprint: "213098462C96340E4E0F55E75CB4741D"
+methods:
+- method:
+    name: "saveCourse"
+    returnType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+    signature: "saveCourse(com.scttassignment.Studentmanagementsystem.dto.CourseDTO)\
+      \ : com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+    instructionFingerprint: "3F895BEFB54A37122AE91C6C8872CB64"
+    parametersTypes:
+    - "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "saveCourseTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1369491666CBEC803685B2CC4238CDC1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            modelMapper:
+              sapientType: "MOCK"
+              valueType: "org.modelmapper.ModelMapper"
+              uuid: "modelMapper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            courseRepo:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.repository.CourseRepo"
+              uuid: "courseRepo1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            modelMapper:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.modelmapper.ModelMapper"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.modelmapper.ModelMapper"
+              uuid: "modelMapper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            courseRepo:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.repository.CourseRepo"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.repository.CourseRepo"
+              uuid: "courseRepo1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "courseDTO"
+      modelFingerprint: "B8DADD5D26526AA7A450BA955A04435C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+        uuid: "saveCourse_courseDTO1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "modelMapper"
+      modelFingerprint: "4609CD78A1C44E8D9B1DCCC4D9C4D729"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.modelmapper.ModelMapper"
+        uuid: "modelMapper1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.modelMapper"
+        name: "map"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+            uuid: "saveCourse_courseDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "destinationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.scttassignment.Studentmanagementsystem.entity.course"
+            valueType: "java.lang.Class"
+            genericValueType: "com.scttassignment.Studentmanagementsystem.entity.course"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "map(CourseDTO,Class): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.scttassignment.Studentmanagementsystem.entity.course"
+          uuid: "saveCourse_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "courseRepo"
+      modelFingerprint: "2BEAA72AB6324369BADA1243976CB2D8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.repository.CourseRepo"
+        uuid: "courseRepo1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.courseRepo"
+        name: "save"
+        parameters:
+        - name: "entity"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.entity.course"
+            uuid: "saveCourse_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "save(course): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "saveCourse_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9C2D39C389C4F50E016844BBA3CBB0A1"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+        uuid: "saveCourse_courseDTO1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "79460233-83cf-3d23-b1a5-33a0e06ec78c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

@@ -1,0 +1,401 @@
+---
+modelFingerprint: "CC9972D67F2CC6CEACC842BC54421A9D"
+methods:
+- method:
+    name: "getUser"
+    returnType: "java.lang.String"
+    signature: "getUser() : java.lang.String"
+    instructionFingerprint: "376464346CCFD3C6020249498E8C2F8C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "428A40428EA5353CB32E9D0CF2E2E06D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD_WITH_AUTOWIRED"
+      name: "courseService"
+      modelFingerprint: "F642719C68771FAA0260140C628219BC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+        uuid: "courseService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "22A07CCAF141B7ACF6B72EC1B46211FC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Simple-Root"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "44f00673-e6a8-39d4-849c-3bc2696304ce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "saveCourse"
+    returnType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+    signature: "saveCourse(com.scttassignment.Studentmanagementsystem.dto.CourseDTO)\
+      \ : com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+    instructionFingerprint: "C2F715236B244A74AFAACB36FE2E5ED4"
+    parametersTypes:
+    - "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "saveCourseTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "08CA53DCD9067CF955035A4BC82CB9E5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            courseService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+              uuid: "courseService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            courseService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+              uuid: "courseService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "courseDTO"
+      modelFingerprint: "2999D93961FE7A144C0BA83F619E927E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+        uuid: "saveCourse_courseDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "courseService"
+      modelFingerprint: "8D54FB270BB30411395B6FB08902C830"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+        uuid: "courseService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.courseService"
+        name: "saveCourse"
+        parameters:
+        - name: "courseDTO"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+            uuid: "saveCourse_courseDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "saveCourse(CourseDTO): CourseDTO"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+          uuid: "saveCourse_courseDTO2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9C2D39C389C4F50E016844BBA3CBB0A1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.CourseDTO"
+        uuid: "saveCourse_courseDTO2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "79460233-83cf-3d23-b1a5-33a0e06ec78c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "updateCourse"
+    returnType: "java.lang.String"
+    signature: "updateCourse() : java.lang.String"
+    instructionFingerprint: "07757307057F959DF69EB193719026C5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "updateCourseTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D0A7E2C637AA2F1F60712A1EFB5112EA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD_WITH_AUTOWIRED"
+      name: "courseService"
+      modelFingerprint: "F642719C68771FAA0260140C628219BC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+        uuid: "courseService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3BD724A3781FAC5CA24BEEF5D91A4DBC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "user Updated!"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "330c65d9-c121-333c-9889-48d4a6e83aee"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "deleteCourse"
+    returnType: "java.lang.String"
+    signature: "deleteCourse() : java.lang.String"
+    instructionFingerprint: "5E970D74909CD7133A6940D866A96782"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "deleteCourseTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "32BE157FDEE1F73972E51F7C05FDF6BE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.CourseController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD_WITH_AUTOWIRED"
+      name: "courseService"
+      modelFingerprint: "F642719C68771FAA0260140C628219BC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.CourseService"
+        uuid: "courseService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "63ABD5804886CC034B10EEFBFA0DF72B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "User Deleted!"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "77bcbf42-26b6-34af-9aab-6b0562137b40"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

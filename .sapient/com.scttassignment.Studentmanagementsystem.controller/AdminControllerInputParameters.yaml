@@ -1,0 +1,2085 @@
+---
+modelFingerprint: "39B275D3BF5C28FEB13C67454EE20FAA"
+methods:
+- method:
+    name: "getUser"
+    returnType: "java.lang.String"
+    signature: "getUser() : java.lang.String"
+    instructionFingerprint: "376464346CCFD3C6020249498E8C2F8C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "428A40428EA5353CB32E9D0CF2E2E06D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD_WITH_AUTOWIRED"
+      name: "adminService"
+      modelFingerprint: "5AEFF4A004D797511A68D1FC7E92BCDE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "adminService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "22A07CCAF141B7ACF6B72EC1B46211FC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Simple-Root"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "44f00673-e6a8-39d4-849c-3bc2696304ce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "saveAdmin"
+    returnType: "org.springframework.http.ResponseEntity"
+    signature: "saveAdmin(com.scttassignment.Studentmanagementsystem.dto.AdminDTO)\
+      \ : org.springframework.http.ResponseEntity<java.lang.String>"
+    instructionFingerprint: "52C7238D1EA87F42E099AF4CA7A43A84"
+    parametersTypes:
+    - "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "saveAdminWhenAdminServiceRegisterAdminAdminDTO"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "70C13D5F859C64CBD77AFB6DA6CBB699"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "adminDTO"
+      modelFingerprint: "AEA51BA2C699CF1858FA183F00DB2766"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "saveAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "adminService"
+      modelFingerprint: "DE24A4F8B03B2A7952CA0FC3C60AB0C6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "adminService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.adminService"
+        name: "registerAdmin"
+        parameters:
+        - name: "adminDTO"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+            uuid: "saveAdmin_adminDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerAdmin(AdminDTO): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "saveAdmin_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ResponseEntity"
+      modelFingerprint: "60654E4E5F84D70492CC2EF0B1BBD45F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.http.ResponseEntity"
+        uuid: "org.springframework.http.ResponseEntity"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity"
+        name: "ok"
+        parameters:
+        - name: "body"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Registration successful"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "ok(String): ResponseEntity"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "ok"
+            methodParameters:
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Registration successful"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "ok"
+            methodParameters:
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Registration successful"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.http.ResponseEntity"
+          genericValueType: "java.lang.String"
+          uuid: "saveAdmin_responseEntity1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "638FC0E0DF72E97AB33ABD62BC59B1C7"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "ok"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Registration successful"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "ok"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Registration successful"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.http.ResponseEntity"
+        genericValueType: "java.lang.String"
+        uuid: "saveAdmin_responseEntity1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d132b5ec-c137-390d-a389-0ea5e3ffedf1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "saveAdminWhenAdminServiceNotRegisterAdminAdminDTO"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BA4851D8012682DA2EEF281E3EBB8EB7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "adminDTO"
+      modelFingerprint: "AEA51BA2C699CF1858FA183F00DB2766"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "saveAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "adminService"
+      modelFingerprint: "F10D3FD4BEAA24E4EB0AF23D228C33BB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "adminService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.adminService"
+        name: "registerAdmin"
+        parameters:
+        - name: "adminDTO"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+            uuid: "saveAdmin_adminDTO1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerAdmin(AdminDTO): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "saveAdmin_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ResponseEntity"
+      modelFingerprint: "A95C71518258E19408D2226D85538185"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.http.ResponseEntity"
+        uuid: "org.springframework.http.ResponseEntity"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity"
+        name: "status"
+        parameters:
+        - name: "status"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BAD_REQUEST"
+            valueType: "org.springframework.http.HttpStatus"
+            uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "status(HttpStatus): ResponseEntity$BodyBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "status"
+            methodParameters:
+            - value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "BAD_REQUEST"
+                valueType: "org.springframework.http.HttpStatus"
+                uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "status"
+            methodParameters:
+            - value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "BAD_REQUEST"
+                valueType: "org.springframework.http.HttpStatus"
+                uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+          uuid: "saveAdmin_responseEntity.BodyBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "5A11A170BFD9A5C205CBAAE97B7090AE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "status"
+          methodParameters:
+          - value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BAD_REQUEST"
+              valueType: "org.springframework.http.HttpStatus"
+              uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "status"
+          methodParameters:
+          - value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BAD_REQUEST"
+              valueType: "org.springframework.http.HttpStatus"
+              uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+        uuid: "saveAdmin_responseEntity.BodyBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity$BodyBuilder"
+        name: "body"
+        parameters:
+        - name: "body"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Email already exists"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "body(String): ResponseEntity"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "BAD_REQUEST"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "BAD_REQUEST"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "saveAdmin_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Email already exists"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "BAD_REQUEST"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "saveAdmin_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Email already exists"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          valueType: "org.springframework.http.ResponseEntity"
+          genericValueType: "java.lang.String"
+          uuid: "saveAdmin_responseEntity1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6359D3FB2D6134F8F9C0B42E2E33A5E2"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "BAD_REQUEST"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "BAD_REQUEST"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "saveAdmin_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Email already exists"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        suggestedContent: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "BAD_REQUEST"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-BAD_REQUEST"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "saveAdmin_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Email already exists"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        valueType: "org.springframework.http.ResponseEntity"
+        genericValueType: "java.lang.String"
+        uuid: "saveAdmin_responseEntity1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9828baba-9a49-3162-9d48-db12edb95ac7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "loginAdmin"
+    returnType: "org.springframework.http.ResponseEntity"
+    signature: "loginAdmin(com.scttassignment.Studentmanagementsystem.dto.AdminDTO)\
+      \ : org.springframework.http.ResponseEntity<java.lang.String>"
+    instructionFingerprint: "C4AB982CDE94CFF1A783BE697CB8D854"
+    parametersTypes:
+    - "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "loginAdminWhenAdminServiceAuthenticateAdminKduemailPassword"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C606E8B73F8A858FBA1CAEEBCD83ACC0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "adminDTO"
+      modelFingerprint: "FD6AF43D0203753C579EB0D078B3753B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "password1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "kduemail1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "loginAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "adminDTO"
+      modelFingerprint: "B3611E340C0A3D2491CB25BDA391D402"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "password1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "kduemail1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "loginAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "adminDTO"
+        name: "getKduemail"
+        parameters: []
+        signature: "getKduemail(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "kduemail1"
+          valueType: "java.lang.String"
+          uuid: "loginAdmin_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "adminDTO"
+      modelFingerprint: "38B6269CC7D6C74655AF92FE5A613A46"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "password1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "kduemail1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "loginAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "adminDTO"
+        name: "getPassword"
+        parameters: []
+        signature: "getPassword(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "password1"
+          valueType: "java.lang.String"
+          uuid: "loginAdmin_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "adminService"
+      modelFingerprint: "70CC2F2CE27BCF1D00625A5ACAA52911"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "adminService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.adminService"
+        name: "authenticateAdmin"
+        parameters:
+        - name: "kduemail"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "kduemail1"
+            valueType: "java.lang.String"
+            uuid: "loginAdmin_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "password"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "password1"
+            valueType: "java.lang.String"
+            uuid: "loginAdmin_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "authenticateAdmin(String,String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "loginAdmin_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ResponseEntity"
+      modelFingerprint: "79489575C75E2828934B18AB7BA80C07"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.http.ResponseEntity"
+        uuid: "org.springframework.http.ResponseEntity"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity"
+        name: "ok"
+        parameters: []
+        signature: "ok(): ResponseEntity$BodyBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "ok"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "ok"
+            methodParameters: []
+          valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+          uuid: "loginAdmin_responseEntity.BodyBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "80AA004A453FE7C7BD53EB86D610AD92"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "ok"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "ok"
+          methodParameters: []
+        valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+        uuid: "loginAdmin_responseEntity.BodyBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity$BodyBuilder"
+        name: "body"
+        parameters:
+        - name: "body"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Logged Successfully"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "body(String): ResponseEntity"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "ok"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "ok"
+                methodParameters: []
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "loginAdmin_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Logged Successfully"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "ok"
+                methodParameters: []
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "loginAdmin_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Logged Successfully"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          valueType: "org.springframework.http.ResponseEntity"
+          genericValueType: "java.lang.String"
+          uuid: "loginAdmin_responseEntity1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E14EDE94B2316A4A54EB50101C74FBED"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "ok"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "ok"
+              methodParameters: []
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "loginAdmin_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Logged Successfully"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        suggestedContent: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "ok"
+              methodParameters: []
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "loginAdmin_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Logged Successfully"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        valueType: "org.springframework.http.ResponseEntity"
+        genericValueType: "java.lang.String"
+        uuid: "loginAdmin_responseEntity1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7c2a5400-a846-3701-9d1a-238eeeedf98e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "loginAdminWhenAdminServiceNotAuthenticateAdminKduemailPassword"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "10F7970EFC790A1FFB0445E6BA25E72E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "MOCK"
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            adminService:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+              uuid: "adminService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "adminDTO"
+      modelFingerprint: "FD6AF43D0203753C579EB0D078B3753B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "password1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "kduemail1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "loginAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "adminDTO"
+      modelFingerprint: "B3611E340C0A3D2491CB25BDA391D402"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "password1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "kduemail1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "loginAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "adminDTO"
+        name: "getKduemail"
+        parameters: []
+        signature: "getKduemail(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "kduemail1"
+          valueType: "java.lang.String"
+          uuid: "loginAdmin_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "adminDTO"
+      modelFingerprint: "38B6269CC7D6C74655AF92FE5A613A46"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "password1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "kduemail1"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            password:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            kduemail:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "loginAdmin_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.scttassignment.Studentmanagementsystem.dto.AdminDTO"
+        uuid: "loginAdmin_adminDTO1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "adminDTO"
+        name: "getPassword"
+        parameters: []
+        signature: "getPassword(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "password1"
+          valueType: "java.lang.String"
+          uuid: "loginAdmin_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "adminService"
+      modelFingerprint: "C19061FCC894958B536E51B7761FA5FD"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "adminService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.adminService"
+        name: "authenticateAdmin"
+        parameters:
+        - name: "kduemail"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "kduemail1"
+            valueType: "java.lang.String"
+            uuid: "loginAdmin_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "password"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "password1"
+            valueType: "java.lang.String"
+            uuid: "loginAdmin_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "authenticateAdmin(String,String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "loginAdmin_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ResponseEntity"
+      modelFingerprint: "636E488C307B1A8537F834134A24B4EC"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.http.ResponseEntity"
+        uuid: "org.springframework.http.ResponseEntity"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity"
+        name: "status"
+        parameters:
+        - name: "status"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNAUTHORIZED"
+            valueType: "org.springframework.http.HttpStatus"
+            uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "status(HttpStatus): ResponseEntity$BodyBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "status"
+            methodParameters:
+            - value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "UNAUTHORIZED"
+                valueType: "org.springframework.http.HttpStatus"
+                uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.http.ResponseEntity"
+            method: "status"
+            methodParameters:
+            - value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "UNAUTHORIZED"
+                valueType: "org.springframework.http.HttpStatus"
+                uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+          uuid: "loginAdmin_responseEntity.BodyBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "65858DECCF04CD984576FD0FA7595BC3"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "status"
+          methodParameters:
+          - value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "UNAUTHORIZED"
+              valueType: "org.springframework.http.HttpStatus"
+              uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.http.ResponseEntity"
+          method: "status"
+          methodParameters:
+          - value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "UNAUTHORIZED"
+              valueType: "org.springframework.http.HttpStatus"
+              uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+        uuid: "loginAdmin_responseEntity.BodyBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.http.ResponseEntity$BodyBuilder"
+        name: "body"
+        parameters:
+        - name: "body"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Invalid email or password"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "body(String): ResponseEntity"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "UNAUTHORIZED"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "UNAUTHORIZED"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "loginAdmin_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Invalid email or password"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.http.ResponseEntity"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.http.ResponseEntity"
+                method: "status"
+                methodParameters:
+                - value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "UNAUTHORIZED"
+                    valueType: "org.springframework.http.HttpStatus"
+                    uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+              uuid: "loginAdmin_responseEntity.BodyBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "body"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "Invalid email or password"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "body"
+          valueType: "org.springframework.http.ResponseEntity"
+          genericValueType: "java.lang.String"
+          uuid: "loginAdmin_responseEntity1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "36565A7E69A22B4461A4D118170A527A"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "UNAUTHORIZED"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "UNAUTHORIZED"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "loginAdmin_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid email or password"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        suggestedContent: !<method_return_from_value>
+          target: "org.springframework.http.ResponseEntity"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.http.ResponseEntity"
+              method: "status"
+              methodParameters:
+              - value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "UNAUTHORIZED"
+                  valueType: "org.springframework.http.HttpStatus"
+                  uuid: "Enum-org.springframework.http.HttpStatus-UNAUTHORIZED"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.http.ResponseEntity$BodyBuilder"
+            uuid: "loginAdmin_responseEntity.BodyBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "body"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid email or password"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "body"
+        valueType: "org.springframework.http.ResponseEntity"
+        genericValueType: "java.lang.String"
+        uuid: "loginAdmin_responseEntity1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ad5cf4ed-fc1d-3b39-b5ac-032d866c32d2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "updateAdmin"
+    returnType: "java.lang.String"
+    signature: "updateAdmin() : java.lang.String"
+    instructionFingerprint: "46D369852E0DF62711C46616FAF59549"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "updateAdminTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D0A7E2C637AA2F1F60712A1EFB5112EA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD_WITH_AUTOWIRED"
+      name: "adminService"
+      modelFingerprint: "5AEFF4A004D797511A68D1FC7E92BCDE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "adminService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3BD724A3781FAC5CA24BEEF5D91A4DBC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "user Updated!"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3245ff6f-060f-38e1-8ad3-d4224ece5568"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "deleteAdmin"
+    returnType: "java.lang.String"
+    signature: "deleteAdmin() : java.lang.String"
+    instructionFingerprint: "026FD7662CED3EAD74AE5E92C4B9556D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "deleteAdminTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "32BE157FDEE1F73972E51F7C05FDF6BE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.scttassignment.Studentmanagementsystem.controller.AdminController"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD_WITH_AUTOWIRED"
+      name: "adminService"
+      modelFingerprint: "5AEFF4A004D797511A68D1FC7E92BCDE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.scttassignment.Studentmanagementsystem.service.AdminService"
+        uuid: "adminService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "63ABD5804886CC034B10EEFBFA0DF72B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "User Deleted!"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "950841ef-fd83-3b8d-b1d6-7ec5259b7fb7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

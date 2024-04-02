@@ -1,0 +1,80 @@
+---
+modelFingerprint: "3999861C280FB8605EBD2DAD0DB88514"
+methods:
+- method:
+    name: "modelMapper"
+    returnType: "org.modelmapper.ModelMapper"
+    signature: "modelMapper() : org.modelmapper.ModelMapper"
+    instructionFingerprint: "3AEF40030763F4B0FFE5F1D3F4E698E1"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "modelMapperTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3C4DD4B6B214F891671E3855325AFEBB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.StudentmanagementsystemApplication"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.scttassignment.Studentmanagementsystem.StudentmanagementsystemApplication"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.scttassignment.Studentmanagementsystem.StudentmanagementsystemApplication"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "28941DFDB23A229DDEFDADB54F18F7B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.modelmapper.ModelMapper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.modelmapper.ModelMapper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.modelmapper.ModelMapper"
+        uuid: "modelMapper_modelMapper1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c429d1dc-d862-3023-be0b-28224bb13859"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
